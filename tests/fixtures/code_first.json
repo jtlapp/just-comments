@@ -1,0 +1,17 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 47,
+      "targetLineNum": 6,
+      "comments": [
+        {
+          "startOffset": 23,
+          "startLine": 4,
+          "startChar": 1,
+          "endLine": 4,
+          "text": "// code first and last"
+        }
+      ]
+    }
+  ]
+}

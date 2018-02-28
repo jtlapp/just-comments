@@ -1,0 +1,17 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 47,
+      "targetLineNum": 4,
+      "comments": [
+        {
+          "startOffset": 0,
+          "startLine": 1,
+          "startChar": 1,
+          "endLine": 2,
+          "text": "/* 1st line of comment\n2nd line of comment */"
+        }
+      ]
+    }
+  ]
+}

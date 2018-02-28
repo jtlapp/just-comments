@@ -1,0 +1,130 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 46,
+      "targetLineNum": 4,
+      "comments": [
+        {
+          "startOffset": 1,
+          "startLine": 2,
+          "startChar": 1,
+          "endLine": 2,
+          "text": "// This comment also targets the next line."
+        },
+        {
+          "startOffset": 59,
+          "startLine": 4,
+          "startChar": 14,
+          "endLine": 4,
+          "text": "// Same line 1"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 147,
+      "targetLineNum": 10,
+      "comments": [
+        {
+          "startOffset": 108,
+          "startLine": 8,
+          "startChar": 1,
+          "endLine": 8,
+          "text": "// This comment targets its own line."
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 178,
+      "targetLineNum": 12,
+      "comments": [
+        {
+          "startOffset": 191,
+          "startLine": 12,
+          "startChar": 14,
+          "endLine": 12,
+          "text": "// Only comment to target this line"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 227,
+      "targetLineNum": 13,
+      "comments": [
+        {
+          "startOffset": 239,
+          "startLine": 13,
+          "startChar": 13,
+          "endLine": 13,
+          "text": "/* Same line 3 */"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 258,
+      "targetLineNum": 15,
+      "comments": [
+        {
+          "startOffset": 270,
+          "startLine": 15,
+          "startChar": 13,
+          "endLine": 15,
+          "text": "/* multi 1 */"
+        },
+        {
+          "startOffset": 284,
+          "startLine": 15,
+          "startChar": 27,
+          "endLine": 15,
+          "text": "/*multi 2*/"
+        },
+        {
+          "startOffset": 295,
+          "startLine": 15,
+          "startChar": 38,
+          "endLine": 15,
+          "text": "/*multi 3*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 307,
+      "targetLineNum": 16,
+      "comments": [
+        {
+          "startOffset": 323,
+          "startLine": 16,
+          "startChar": 17,
+          "endLine": 16,
+          "text": "/*multi A*/"
+        },
+        {
+          "startOffset": 335,
+          "startLine": 16,
+          "startChar": 29,
+          "endLine": 16,
+          "text": "// end of multi A"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 353,
+      "targetLineNum": 17,
+      "comments": [
+        {
+          "startOffset": 369,
+          "startLine": 17,
+          "startChar": 17,
+          "endLine": 17,
+          "text": "/*multi B*/"
+        },
+        {
+          "startOffset": 380,
+          "startLine": 17,
+          "startChar": 28,
+          "endLine": 17,
+          "text": "// end of multi B"
+        }
+      ]
+    }
+  ]
+}

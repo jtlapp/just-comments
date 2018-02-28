@@ -1,0 +1,173 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 1,
+      "targetLineNum": 2,
+      "comments": [
+        {
+          "startOffset": 18,
+          "startLine": 2,
+          "startChar": 18,
+          "endLine": 2,
+          "text": "// not regex 1"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 33,
+      "targetLineNum": 3,
+      "comments": [
+        {
+          "startOffset": 50,
+          "startLine": 3,
+          "startChar": 18,
+          "endLine": 3,
+          "text": "// not regex 2"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 65,
+      "targetLineNum": 4,
+      "comments": [
+        {
+          "startOffset": 88,
+          "startLine": 4,
+          "startChar": 24,
+          "endLine": 4,
+          "text": "// not regex 3"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 104,
+      "targetLineNum": 6,
+      "comments": [
+        {
+          "startOffset": 132,
+          "startLine": 6,
+          "startChar": 29,
+          "endLine": 6,
+          "text": "// not regex 4"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 147,
+      "targetLineNum": 7,
+      "comments": [
+        {
+          "startOffset": 174,
+          "startLine": 7,
+          "startChar": 28,
+          "endLine": 7,
+          "text": "// not regex 5"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 189,
+      "targetLineNum": 8,
+      "comments": [
+        {
+          "startOffset": 202,
+          "startLine": 8,
+          "startChar": 14,
+          "endLine": 8,
+          "text": "/*middle*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 217,
+      "targetLineNum": 10,
+      "comments": [
+        {
+          "startOffset": 242,
+          "startLine": 10,
+          "startChar": 26,
+          "endLine": 10,
+          "text": "/* regex A */"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 258,
+      "targetLineNum": 11,
+      "comments": [
+        {
+          "startOffset": 282,
+          "startLine": 11,
+          "startChar": 25,
+          "endLine": 11,
+          "text": "// regex B"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 332,
+      "targetLineNum": 14,
+      "comments": [
+        {
+          "startOffset": 341,
+          "startLine": 14,
+          "startChar": 10,
+          "endLine": 14,
+          "text": "/*not regex 6*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 366,
+      "targetLineNum": 17,
+      "comments": [
+        {
+          "startOffset": 409,
+          "startLine": 17,
+          "startChar": 44,
+          "endLine": 17,
+          "text": "// regex C"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 420,
+      "targetLineNum": 18,
+      "comments": [
+        {
+          "startOffset": 462,
+          "startLine": 18,
+          "startChar": 43,
+          "endLine": 18,
+          "text": "// regex D"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 473,
+      "targetLineNum": 19,
+      "comments": [
+        {
+          "startOffset": 511,
+          "startLine": 19,
+          "startChar": 39,
+          "endLine": 19,
+          "text": "// regex E"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 522,
+      "targetLineNum": 20,
+      "comments": [
+        {
+          "startOffset": 546,
+          "startLine": 20,
+          "startChar": 25,
+          "endLine": 20,
+          "text": "// regex F"
+        }
+      ]
+    }
+  ]
+}

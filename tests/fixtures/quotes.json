@@ -1,0 +1,30 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 26,
+      "targetLineNum": 3,
+      "comments": [
+        {
+          "startOffset": 0,
+          "startLine": 1,
+          "startChar": 1,
+          "endLine": 1,
+          "text": "// First of two comments"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 866,
+      "targetLineNum": 49,
+      "comments": [
+        {
+          "startOffset": 843,
+          "startLine": 48,
+          "startChar": 1,
+          "endLine": 48,
+          "text": "// Last of two comments"
+        }
+      ]
+    }
+  ]
+}

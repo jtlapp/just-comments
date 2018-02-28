@@ -1,0 +1,108 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 15,
+      "targetLineNum": 4,
+      "comments": [
+        {
+          "startOffset": 1,
+          "startLine": 2,
+          "startChar": 1,
+          "endLine": 2,
+          "text": "// Comment 1"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 65,
+      "targetLineNum": 8,
+      "comments": [
+        {
+          "startOffset": 49,
+          "startLine": 6,
+          "startChar": 5,
+          "endLine": 6,
+          "text": "// Comment 1.1"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 134,
+      "targetLineNum": 11,
+      "comments": [
+        {
+          "startOffset": 117,
+          "startLine": 10,
+          "startChar": 9,
+          "endLine": 10,
+          "text": "// Comment 1.1.1"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 210,
+      "targetLineNum": 17,
+      "comments": [
+        {
+          "startOffset": 196,
+          "startLine": 15,
+          "startChar": 1,
+          "endLine": 15,
+          "text": "// Comment 2"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 280,
+      "targetLineNum": 21,
+      "comments": [
+        {
+          "startOffset": 264,
+          "startLine": 19,
+          "startChar": 5,
+          "endLine": 19,
+          "text": "// Comment 2.1"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 352,
+      "targetLineNum": 24,
+      "comments": [
+        {
+          "startOffset": 332,
+          "startLine": 23,
+          "startChar": 9,
+          "endLine": 23,
+          "text": "/* Comment 2.1.1 */"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 525,
+      "targetLineNum": 29,
+      "comments": [
+        {
+          "startOffset": 505,
+          "startLine": 28,
+          "startChar": 9,
+          "endLine": 28,
+          "text": "/* Comment 2.1.2 */"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 733,
+      "targetLineNum": 35,
+      "comments": [
+        {
+          "startOffset": 713,
+          "startLine": 34,
+          "startChar": 9,
+          "endLine": 34,
+          "text": "/* Comment 2.1.3 */"
+        }
+      ]
+    }
+  ]
+}

@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Project
+.DS_Store
+/**/build
+package-lock.json
+yarn.lock

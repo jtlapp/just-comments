@@ -1,0 +1,191 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 93,
+      "targetLineNum": 6,
+      "comments": [
+        {
+          "startOffset": 0,
+          "startLine": 1,
+          "startChar": 1,
+          "endLine": 1,
+          "text": "// \"hello\""
+        },
+        {
+          "startOffset": 11,
+          "startLine": 2,
+          "startChar": 1,
+          "endLine": 2,
+          "text": "// 'there'"
+        },
+        {
+          "startOffset": 22,
+          "startLine": 3,
+          "startChar": 1,
+          "endLine": 3,
+          "text": "/*Shouldn't register \"quotes\" of any kind.*/"
+        },
+        {
+          "startOffset": 67,
+          "startLine": 4,
+          "startChar": 1,
+          "endLine": 4,
+          "text": "//Not even backquotes `."
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 132,
+      "targetLineNum": 9,
+      "comments": [
+        {
+          "startOffset": 104,
+          "startLine": 8,
+          "startChar": 1,
+          "endLine": 8,
+          "text": "/* \"end of the comment 1:*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 165,
+      "targetLineNum": 12,
+      "comments": [
+        {
+          "startOffset": 137,
+          "startLine": 11,
+          "startChar": 1,
+          "endLine": 11,
+          "text": "/* 'end of the comment 2:*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 198,
+      "targetLineNum": 15,
+      "comments": [
+        {
+          "startOffset": 170,
+          "startLine": 14,
+          "startChar": 1,
+          "endLine": 14,
+          "text": "/* `end of the comment 3:*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 248,
+      "targetLineNum": 19,
+      "comments": [
+        {
+          "startOffset": 203,
+          "startLine": 17,
+          "startChar": 1,
+          "endLine": 17,
+          "text": "// Also not /regex/"
+        },
+        {
+          "startOffset": 223,
+          "startLine": 18,
+          "startChar": 1,
+          "endLine": 18,
+          "text": "/* /comment ends here:*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 316,
+      "targetLineNum": 22,
+      "comments": [
+        {
+          "startOffset": 260,
+          "startLine": 21,
+          "startChar": 1,
+          "endLine": 21,
+          "text": "// Backslash-LF doesn't continue single-line comments \\"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 389,
+      "targetLineNum": 25,
+      "comments": [
+        {
+          "startOffset": 339,
+          "startLine": 24,
+          "startChar": 1,
+          "endLine": 24,
+          "text": "/* Backslash-* doesn't prevent ending comment \\*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 592,
+      "targetLineNum": 34,
+      "comments": [
+        {
+          "startOffset": 414,
+          "startLine": 27,
+          "startChar": 1,
+          "endLine": 27,
+          "text": "// ( doesn't extend comment"
+        },
+        {
+          "startOffset": 442,
+          "startLine": 28,
+          "startChar": 1,
+          "endLine": 28,
+          "text": "/* ( doesn't extend comment */"
+        },
+        {
+          "startOffset": 473,
+          "startLine": 29,
+          "startChar": 1,
+          "endLine": 29,
+          "text": "// { doesn't extend comment"
+        },
+        {
+          "startOffset": 501,
+          "startLine": 30,
+          "startChar": 1,
+          "endLine": 30,
+          "text": "/* { doesn't extend comment */"
+        },
+        {
+          "startOffset": 532,
+          "startLine": 31,
+          "startChar": 1,
+          "endLine": 31,
+          "text": "// [ doesn't extend comment"
+        },
+        {
+          "startOffset": 560,
+          "startLine": 32,
+          "startChar": 1,
+          "endLine": 32,
+          "text": "/* [ doesn't extend comment */"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 697,
+      "targetLineNum": 40,
+      "comments": [
+        {
+          "startOffset": 600,
+          "startLine": 36,
+          "startChar": 1,
+          "endLine": 36,
+          "text": "// Can comment out a /* comment */ and continue"
+        },
+        {
+          "startOffset": 648,
+          "startLine": 37,
+          "startChar": 1,
+          "endLine": 38,
+          "text": "/* Can comment out a // comment\nand continue */"
+        }
+      ]
+    }
+  ]
+}

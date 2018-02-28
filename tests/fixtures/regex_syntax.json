@@ -1,0 +1,212 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 1,
+      "targetLineNum": 2,
+      "comments": [
+        {
+          "startOffset": 28,
+          "startLine": 2,
+          "startChar": 28,
+          "endLine": 2,
+          "text": "// some comment"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 45,
+      "targetLineNum": 4,
+      "comments": [
+        {
+          "startOffset": 53,
+          "startLine": 4,
+          "startChar": 9,
+          "endLine": 4,
+          "text": "// comment"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 64,
+      "targetLineNum": 5,
+      "comments": [
+        {
+          "startOffset": 72,
+          "startLine": 5,
+          "startChar": 9,
+          "endLine": 5,
+          "text": "// comment"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 192,
+      "targetLineNum": 12,
+      "comments": [
+        {
+          "startOffset": 206,
+          "startLine": 12,
+          "startChar": 15,
+          "endLine": 12,
+          "text": "// end with \""
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 220,
+      "targetLineNum": 13,
+      "comments": [
+        {
+          "startOffset": 234,
+          "startLine": 13,
+          "startChar": 15,
+          "endLine": 13,
+          "text": "// end with '"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 249,
+      "targetLineNum": 15,
+      "comments": [
+        {
+          "startOffset": 278,
+          "startLine": 15,
+          "startChar": 30,
+          "endLine": 15,
+          "text": "// ends with ]"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 293,
+      "targetLineNum": 16,
+      "comments": [
+        {
+          "startOffset": 322,
+          "startLine": 16,
+          "startChar": 30,
+          "endLine": 16,
+          "text": "// ends with )"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 337,
+      "targetLineNum": 17,
+      "comments": [
+        {
+          "startOffset": 363,
+          "startLine": 17,
+          "startChar": 27,
+          "endLine": 17,
+          "text": "// 1"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 368,
+      "targetLineNum": 18,
+      "comments": [
+        {
+          "startOffset": 392,
+          "startLine": 18,
+          "startChar": 25,
+          "endLine": 18,
+          "text": "// 2"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 397,
+      "targetLineNum": 19,
+      "comments": [
+        {
+          "startOffset": 428,
+          "startLine": 19,
+          "startChar": 32,
+          "endLine": 19,
+          "text": "// 3"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 433,
+      "targetLineNum": 20,
+      "comments": [
+        {
+          "startOffset": 464,
+          "startLine": 20,
+          "startChar": 32,
+          "endLine": 20,
+          "text": "// 4"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 469,
+      "targetLineNum": 21,
+      "comments": [
+        {
+          "startOffset": 501,
+          "startLine": 21,
+          "startChar": 33,
+          "endLine": 21,
+          "text": "// 5"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 506,
+      "targetLineNum": 22,
+      "comments": [
+        {
+          "startOffset": 538,
+          "startLine": 22,
+          "startChar": 33,
+          "endLine": 22,
+          "text": "// 6"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 543,
+      "targetLineNum": 23,
+      "comments": [
+        {
+          "startOffset": 571,
+          "startLine": 23,
+          "startChar": 29,
+          "endLine": 23,
+          "text": "// 7"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 576,
+      "targetLineNum": 24,
+      "comments": [
+        {
+          "startOffset": 604,
+          "startLine": 24,
+          "startChar": 29,
+          "endLine": 24,
+          "text": "// 8"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 634,
+      "targetLineNum": 27,
+      "comments": [
+        {
+          "startOffset": 610,
+          "startLine": 26,
+          "startChar": 1,
+          "endLine": 26,
+          "text": "// EOF at end of regex:"
+        }
+      ]
+    }
+  ]
+}

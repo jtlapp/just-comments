@@ -1,0 +1,124 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 1,
+      "targetLineNum": 2,
+      "comments": [
+        {
+          "startOffset": 1,
+          "startLine": 2,
+          "startChar": 1,
+          "endLine": 2,
+          "text": "/*preceding*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 23,
+      "targetLineNum": 4,
+      "comments": [
+        {
+          "startOffset": 23,
+          "startLine": 4,
+          "startChar": 1,
+          "endLine": 4,
+          "text": "/*preceding1*/"
+        },
+        {
+          "startOffset": 38,
+          "startLine": 4,
+          "startChar": 16,
+          "endLine": 4,
+          "text": "/*preceding2*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 61,
+      "targetLineNum": 6,
+      "comments": [
+        {
+          "startOffset": 61,
+          "startLine": 6,
+          "startChar": 1,
+          "endLine": 6,
+          "text": "/*preceding*/"
+        },
+        {
+          "startOffset": 82,
+          "startLine": 6,
+          "startChar": 22,
+          "endLine": 6,
+          "text": "/*following*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 97,
+      "targetLineNum": 8,
+      "comments": [
+        {
+          "startOffset": 97,
+          "startLine": 8,
+          "startChar": 1,
+          "endLine": 8,
+          "text": "/*preceding*/"
+        },
+        {
+          "startOffset": 118,
+          "startLine": 8,
+          "startChar": 22,
+          "endLine": 8,
+          "text": "//following"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 152,
+      "targetLineNum": 11,
+      "comments": [
+        {
+          "startOffset": 131,
+          "startLine": 10,
+          "startChar": 1,
+          "endLine": 10,
+          "text": "// Targets following"
+        },
+        {
+          "startOffset": 152,
+          "startLine": 11,
+          "startChar": 1,
+          "endLine": 11,
+          "text": "/*preceding123*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 198,
+      "targetLineNum": 14,
+      "comments": [
+        {
+          "startOffset": 177,
+          "startLine": 13,
+          "startChar": 1,
+          "endLine": 13,
+          "text": "// Targets following"
+        },
+        {
+          "startOffset": 198,
+          "startLine": 14,
+          "startChar": 1,
+          "endLine": 14,
+          "text": "/*precedingABC*/"
+        },
+        {
+          "startOffset": 222,
+          "startLine": 14,
+          "startChar": 25,
+          "endLine": 14,
+          "text": "//following"
+        }
+      ]
+    }
+  ]
+}

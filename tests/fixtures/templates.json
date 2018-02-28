@@ -1,0 +1,56 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 34,
+      "targetLineNum": 6,
+      "comments": [
+        {
+          "startOffset": 23,
+          "startLine": 4,
+          "startChar": 1,
+          "endLine": 4,
+          "text": "/* 1st */"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 126,
+      "targetLineNum": 20,
+      "comments": [
+        {
+          "startOffset": 141,
+          "startLine": 20,
+          "startChar": 16,
+          "endLine": 20,
+          "text": "/*2nd*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 153,
+      "targetLineNum": 22,
+      "comments": [
+        {
+          "startOffset": 160,
+          "startLine": 22,
+          "startChar": 8,
+          "endLine": 22,
+          "text": "/*3rd*/"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 197,
+      "targetLineNum": 27,
+      "comments": [
+        {
+          "startOffset": 188,
+          "startLine": 26,
+          "startChar": 1,
+          "endLine": 26,
+          "text": "/* 4th */"
+        }
+      ]
+    }
+  ]
+}

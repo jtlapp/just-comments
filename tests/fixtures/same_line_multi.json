@@ -1,0 +1,97 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 0,
+      "targetLineNum": 1,
+      "comments": [
+        {
+          "startOffset": 15,
+          "startLine": 1,
+          "startChar": 16,
+          "endLine": 2,
+          "text": "/* Starts on same line,\nbut continues onto next line */"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 72,
+      "targetLineNum": 4,
+      "comments": [
+        {
+          "startOffset": 87,
+          "startLine": 4,
+          "startChar": 16,
+          "endLine": 5,
+          "text": "/* Starts on first line.\nContinues on 2nd. */"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 139,
+      "targetLineNum": 7,
+      "comments": [
+        {
+          "startOffset": 154,
+          "startLine": 7,
+          "startChar": 16,
+          "endLine": 8,
+          "text": "/* Starts on first line.\nContinues on 2nd. */"
+        },
+        {
+          "startOffset": 204,
+          "startLine": 8,
+          "startChar": 26,
+          "endLine": 9,
+          "text": "/* and then\non to the third */"
+        },
+        {
+          "startOffset": 240,
+          "startLine": 9,
+          "startChar": 25,
+          "endLine": 9,
+          "text": "// end it here"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 281,
+      "targetLineNum": 12,
+      "comments": [
+        {
+          "startOffset": 256,
+          "startLine": 11,
+          "startChar": 1,
+          "endLine": 11,
+          "text": "// Target next multiline"
+        },
+        {
+          "startOffset": 296,
+          "startLine": 12,
+          "startChar": 16,
+          "endLine": 13,
+          "text": "/* First line.\nSecond line. */"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 368,
+      "targetLineNum": 16,
+      "comments": [
+        {
+          "startOffset": 333,
+          "startLine": 15,
+          "startChar": 1,
+          "endLine": 15,
+          "text": "// Target next, EOF at end of line"
+        },
+        {
+          "startOffset": 383,
+          "startLine": 16,
+          "startChar": 16,
+          "endLine": 17,
+          "text": "/* First line.\nLast line of file. */"
+        }
+      ]
+    }
+  ]
+}

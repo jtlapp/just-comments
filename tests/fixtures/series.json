@@ -1,0 +1,66 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 249,
+      "targetLineNum": 14,
+      "comments": [
+        {
+          "startOffset": 0,
+          "startLine": 1,
+          "startChar": 1,
+          "endLine": 1,
+          "text": "// first comment"
+        },
+        {
+          "startOffset": 17,
+          "startLine": 2,
+          "startChar": 1,
+          "endLine": 2,
+          "text": "// second comment"
+        },
+        {
+          "startOffset": 35,
+          "startLine": 3,
+          "startChar": 1,
+          "endLine": 3,
+          "text": "/* third comment */"
+        },
+        {
+          "startOffset": 55,
+          "startLine": 4,
+          "startChar": 1,
+          "endLine": 4,
+          "text": "// fourth comment"
+        },
+        {
+          "startOffset": 73,
+          "startLine": 5,
+          "startChar": 1,
+          "endLine": 7,
+          "text": "/* fifth comment,\nwhich has three\nlines. */"
+        },
+        {
+          "startOffset": 117,
+          "startLine": 8,
+          "startChar": 1,
+          "endLine": 8,
+          "text": "/* sixth comment */"
+        },
+        {
+          "startOffset": 142,
+          "startLine": 10,
+          "startChar": 5,
+          "endLine": 10,
+          "text": "// seventh comment at 5th char"
+        },
+        {
+          "startOffset": 177,
+          "startLine": 11,
+          "startChar": 5,
+          "endLine": 12,
+          "text": "/* eigth comment at 5th char,\ncontinuing at first char of next line */"
+        }
+      ]
+    }
+  ]
+}
