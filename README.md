@@ -127,6 +127,7 @@ See the [API page](https://github.com/jtlapp/just-comments/blob/master/API.md).
 * Comments that occur on the same line as non-comment source code all target that line of source code.
 * When preceding comments all target a line of source that itself contains comments, the preceding comments and the comments on that line together form a series that targets the line.
 * A multi-line comment that begins on a line containing non-comment source code extends the series of comments that targets the line, so that comments occurring after the multi-line comment but on the same line as the end of the multi-line comment target the same line of code as the preceding multi-line comment.
+* ES6 template literals may contain nested `${...}` expressions, and comments may appear in these expressions. The parser reports these comments and their target lines, but within template literals it does not report characters thay may change code scope. Instead, the parser reports when a template literal opens and when it closes as having a scope initiated by the ` character.
 * The parser reports characters that may begin or end code scopes to facilitate client apps that may subsequently parse non-comment source code. This helps keep clients from having to determine whether these characters occur within quotes, template literals, or regular expressions.
 
 ## License
