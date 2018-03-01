@@ -15,7 +15,7 @@ Parameter | Description
 sourceText|Javascript or Typescript source to parse
 listener|Object that is to receive parse events
 
-### *method* parse()
+### parse()
 ```typescript
 parse(): void
 ```
@@ -32,7 +32,7 @@ This interface properly reports the relative occurrences of comment starts, comm
 
 This interface reports line numbers and character numbers. The first line of a source text is line number 1, and the first character of a line of source is character number 1.
 
-### *method* openScope()
+### openScope()
 ```typescript
 openScope(charCode: number, offset: number, lineNum: number, charNum: number): void
 ```
@@ -46,7 +46,7 @@ offset | Offset into source text of the opening character.
 lineNum | Line number of the source text on which the character occurs.
 charNum | Character number of the line at which the character occurs.
 
-### *method* closeScope()
+### closeScope()
 ```typescript
 closeScope(charCode: number, offset: number, lineNum: number, charNum: number): void
 ```
@@ -60,7 +60,7 @@ offset | Offset into source text of the closing character.
 lineNum | Line number of the source text on which the ocharacter occurs.
 charNum | Character number of the line at which the character occurs.
 
-### *method* beginComment()
+### beginComment()
 ```typescript
 beginComment(startOffset: number, lineNum: number, charNum: number): void
 ```
@@ -73,7 +73,7 @@ startOffset | Offset into source text of character that begins the comment. This
 lineNum | Line number of the source text on which the comment begins. 
 charNum | Character number of the line at which the comment begins.
 
-### *method* endComment()
+### endComment()
 ```typescript
 endComment(nextOffset: number, lineNum: number): void
 ```
@@ -85,7 +85,7 @@ Parameter | Description
 nextOffset | Offset into the source text of the first character that follows the comment. This will be the first character after star-slash in a multi-line comment, and it will be the CR or LF that ends the line in a single-line slash-slash comment.
 lineNum | Line number containing the last character of the comment.
 
-### *method* endCommentBlock()
+### endCommentBlock()
 ```typescript
 endCommentBlock(targetLineOffset: number, targetLineNum: number): void
 ```
@@ -99,14 +99,14 @@ Parameter | Description
 targetLineOffset | Offset into the source text of the first character of the target line. This character need not be non-comment source code, as this code may appear later in the line, possibly even after a comment that begins the line.
 targetLineNum | Line number of the source text of the target line.
 
-### *method* endOfComments()
+### endOfComments()
 ```typescript
 endOfComments(): void
 ```
 
 Report that the parser has completed parsing the source text and no more comments follow.
 
-### *method* fatalError()
+### fatalError()
 ```typescript
 fatalError(message: string, offset: number, lineNum: number, charNum: number): void
 ```
