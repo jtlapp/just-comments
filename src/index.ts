@@ -18,6 +18,7 @@ const LEFT_PAREN = '('.charCodeAt(0);
 const LF = "\n".charCodeAt(0);
 const QUESTION_MARK = '?'.charCodeAt(0);
 const RIGHT_BRACE = '}'.charCodeAt(0);
+const RIGHT_PAREN = ')'.charCodeAt(0);
 const SEMICOLON = ';'.charCodeAt(0);
 const SPACE = ' '.charCodeAt(0);
 const SLASH = '/'.charCodeAt(0);
@@ -57,7 +58,7 @@ const SAME_CONTEXT_CHARS = [
 abstract class ParserState {
 
     lineChar(parser: CommentParser, charCode: number) {
-        parser.escaped = (charCode === BACKSLASH);
+        parser.escaped = !parser.escaped && (charCode === BACKSLASH);
     }
 
     newLine(parser: CommentParser, nextOffset: number) {
@@ -68,7 +69,7 @@ abstract class ParserState {
         parser.escaped = false;
     }
 
-    endOfFile(parser: CommentParser) {
+    endOfSource(parser: CommentParser) {
         if (parser.inCommentBlock) {
             if (parser.lastCodeLineNum < parser.blockStartLineNum) {
                 parser.targetLineOffset = parser.offset;
@@ -89,6 +90,12 @@ abstract class ParserState {
         }
     }
 
+
+    protected _closeScope(parser: CommentParser, charCode: number) {
+        if (parser.openTemplateBraces.length === 0) {
+            parser.listener.closeScope(charCode, parser.offset, parser.lineNum, parser.charNum);
+        }
+    }
     protected _endCommentBlock(parser: CommentParser) {
         parser.listener.endCommentBlock(parser.targetLineOffset, parser.targetLineNum);
         parser.inCommentBlock = false;
@@ -100,6 +107,7 @@ class ExpressionState extends ParserState {
     lineChar(parser: CommentParser, charCode: number) {
         switch (charCode) {
             case BACKTICK:
+            this._openScope(parser, charCode);
             parser.state = CommentParser.state_TemplateLiteral;
             break;
 
@@ -110,18 +118,28 @@ class ExpressionState extends ParserState {
             break;
 
             case LEFT_BRACE:
+            this._openScope(parser, charCode);
             if (parser.openTemplateBraces.length > 0) {
                 ++parser.openTemplateBraces[parser.openTemplateBraces.length - 1];
             }
             break;
 
+            case LEFT_PAREN:
+            this._openScope(parser, charCode);
+            break;
+
             case RIGHT_BRACE:
+            this._closeScope(parser, charCode);
             if (parser.openTemplateBraces.length > 0) {
                 if (--parser.openTemplateBraces[parser.openTemplateBraces.length - 1] === 0) {
                     parser.openTemplateBraces.pop();
                     parser.state = CommentParser.state_TemplateLiteral;
                 }
             }
+            break;
+
+            case RIGHT_PAREN:
+            this._closeScope(parser, charCode);
             break;
 
             case SLASH:
@@ -151,6 +169,12 @@ class ExpressionState extends ParserState {
             }
         }
         super.newLine(parser, nextOffset);
+    }
+
+    protected _openScope(parser: CommentParser, charCode: number) {
+        if (parser.openTemplateBraces.length === 0) {
+            parser.listener.openScope(charCode, parser.offset, parser.lineNum, parser.charNum);
+        }
     }
 }
 
@@ -237,9 +261,9 @@ class SlashSlashCommentState extends CommentState {
         parser.state = CommentParser.state_Expression;
     }
 
-    endOfFile(parser: CommentParser) {
+    endOfSource(parser: CommentParser) {
         this._endComment(parser);
-        super.endOfFile(parser);
+        super.endOfSource(parser);
     }
 }
 
@@ -254,7 +278,7 @@ class SlashStarCommentState extends CommentState {
         }
     }
 
-    endOfFile(parser: CommentParser) {
+    endOfSource(parser: CommentParser) {
         parser.fatalError("Missing */ at end of comment");
     }
 }
@@ -290,6 +314,7 @@ class TemplateLiteralState extends ParserState {
             parser.state = CommentParser.state_PotentialTemplateExpression;
         }
         else if (!parser.escaped && charCode === BACKTICK) {
+            this._closeScope(parser, charCode);
             parser.state = CommentParser.state_Expression;
         }
         else {
@@ -311,6 +336,10 @@ class PotentialTemplateExpressionState extends TemplateLiteralState {
         }
     }
 }
+
+/**
+ * Parse a string of Javascript or Typescript source for comments, emitting events that describe the comments as the comments are found. After constructing an instance, run `parse()` to parse the source text for comments. `parse()` can only be called once.
+ */
 
 export class CommentParser {
 
@@ -345,11 +374,22 @@ export class CommentParser {
     targetLineNum = 0; // number of next target line
     targetLineOffset = 0; // offset to start of current next target line
 
+    /**
+     * Construct an instance of CommentParser.
+     * 
+     * @param sourceText Javascript or Typescript source to parse
+     * @param listener Object that is to receive parse events
+     */
+
     constructor(sourceText: string, listener: CommentListener) {
         this.text = sourceText;
         this.listener = listener;
         this.state = CommentParser.state_Expression;
     }
+
+    /**
+     * Parse the Javascript or Typescript source text for comments. Emits events to the CommentListener that was handed to the constructor. Can only be called once on an instance.
+     */
 
     parse() {
         const textLength = this.text.length;
@@ -379,9 +419,15 @@ export class CommentParser {
         }
 
         if (!this.aborted) {
-            this.state.endOfFile(this);
+            this.state.endOfSource(this);
         }
     }
+
+    /**
+     * Report an error that prevents parsing and abort the parse.
+     * 
+     * @param message Brief description of the error.
+     */
 
     fatalError(message: string) {
         this.listener.fatalError(message, this.offset, this.lineNum, this.charNum);
@@ -389,10 +435,77 @@ export class CommentParser {
     }
 }
 
+/**
+ * Interface for listening to the comment parse events that CommentParser emits.
+ * 
+ * Each comment is assumed to pertain to a portion of code, except for comments that end the source text. The first line of code that a comment characterizes is the called the "target line". Multiple comments may each pertain to the same target line. Each group of comments that pertains to the same target line is called a "comment block". No two comment blocks pertain to the same target line.
+ * 
+ * This interface properly reports the relative occurrences of comment starts, comment ends, scope starts, and scope ends, but it may report comment blocks ends outside the scopes of the blocks' containing comments.
+ * 
+ * This interface reports line numbers and character numbers. The first line of a source text is line number 1, and the first character of a line of source is character number 1.
+ */
+
 export interface CommentListener {
+
+    /**
+     * Report the occurrence of a character that can open a scope. These are occurrences of any of the characters {, (, and ` not appearing within comments, quotes, template literals, or regular expressions. Scopes within template literal expressions are not reported.
+     * 
+     * @param charCode Character code of the character that opens the scope.
+     * @param offset Offset into source text of the opening character.
+     * @param lineNum Line number of the source text on which the character occurs.
+     * @param charNum Character number of the line at which the character occurs.
+     */
+    openScope(charCode: number, offset: number, lineNum: number, charNum: number): void;
+
+    /**
+     * Report the occurrence of a character that can close a scope. These are occurrences of any of the characters }, ), and ` not appearing within comments, quotes, template literals, or regular expressions. Scopes within template literal expressions are not reported.
+     * 
+     * @param charCode Character code of the character that closes the scope.
+     * @param offset Offset into source text of the closing character.
+     * @param lineNum Line number of the source text on which the character occurs.
+     * @param charNum Character number of the line at which the character occurs.
+     */
+    closeScope(charCode: number, offset: number, lineNum: number, charNum: number): void;
+
+    /**
+     * Report the start of a new comment. The first call to this method within a comment block initiates the comment block; there is no separate event for initiating a comment block.
+     * 
+     * @param startOffset Offset into source text of character that begins the comment. This character will be the slash of the slash-slash slash-star that began the comment.
+     * @param lineNum Line number of the source text on which the comment begins. 
+     * @param charNum Character number of the line at which the comment begins.
+     */
     beginComment(startOffset: number, lineNum: number, charNum: number): void;
+
+    /**
+     * Report the end of a comment. More comments may follow within the same comment block.
+     * 
+     * @param nextOffset Offset into the source text of the first character that follows the comment. This will be the first character after star-slash in a multi-line comment, and it will be the CR or LF that ends the line in a single-line slash-slash comment.
+     * @param lineNum Line number containing the last character of the comment.
+     */
     endComment(nextOffset: number, lineNum: number): void;
+
+    /**
+     * Report the end of a comment block. At least one comment will have been previously reported for the comment block. All comments in the block are presumed to characterize the block of code that begins with the indicated target line.
+     * 
+     * This method may be called from a brace scope that differs from the scopes of its containing comments.
+     * 
+     * @param targetLineOffset Offset into the source text of the first character of the target line. This character need not be non-comment source code, as this code may appear later in the line, possibly even after a comment that begins the line.
+     * @param targetLineNum Line number of the source text of the target line.
+     */
     endCommentBlock(targetLineOffset: number, targetLineNum: number): void;
+
+    /**
+     * Report that the parser has completed parsing the source text and no more comments follow.
+     */
     endOfComments(): void;
+
+    /**
+     * Report that the parser encountered an error that prevents it from parsing the source text. The parser has aborted and no more events follow.
+     * 
+     * @param message Brief description of the problem.
+     * @param offset Offset into the source text at which the problem was detected.
+     * @param lineNum Line number of the source text at which the problem was detected.
+     * @param charNum Character number within the line at which the problem was detected.
+     */
     fatalError(message: string, offset: number, lineNum: number, charNum: number): void;
 }

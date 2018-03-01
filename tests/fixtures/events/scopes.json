@@ -1,0 +1,508 @@
+{
+  "events": [
+    {
+      "startOffset": 1,
+      "startLine": 2,
+      "startChar": 1,
+      "endLine": 2,
+      "text": "// Non-functioning, non-compiling excerpt of code for test purposes."
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 78,
+      "lineNum": 4,
+      "charNum": 8
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 111,
+      "lineNum": 4,
+      "charNum": 41
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 163,
+      "lineNum": 6,
+      "charNum": 31
+    },
+    {
+      "startOffset": 169,
+      "startLine": 7,
+      "startChar": 5,
+      "endLine": 7,
+      "text": "/* in interface */"
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 231,
+      "lineNum": 10,
+      "charNum": 1
+    },
+    {
+      "startOffset": 234,
+      "startLine": 12,
+      "startChar": 1,
+      "endLine": 14,
+      "text": "/**\n * Before DummyCollector\n */"
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 323,
+      "lineNum": 16,
+      "charNum": 56
+    },
+    {
+      "startOffset": 330,
+      "startLine": 18,
+      "startChar": 5,
+      "endLine": 18,
+      "text": "// before properties"
+    },
+    {
+      "startOffset": 502,
+      "startLine": 26,
+      "startChar": 5,
+      "endLine": 26,
+      "text": "/** before constructor */"
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 544,
+      "lineNum": 28,
+      "charNum": 16
+    },
+    {
+      "startOffset": 581,
+      "startLine": 28,
+      "startChar": 53,
+      "endLine": 28,
+      "text": "/*in params*/"
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 594,
+      "lineNum": 28,
+      "charNum": 66
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 596,
+      "lineNum": 28,
+      "charNum": 68
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 672,
+      "lineNum": 31,
+      "charNum": 5
+    },
+    {
+      "startOffset": 679,
+      "startLine": 33,
+      "startChar": 5,
+      "endLine": 33,
+      "text": "/** before getBlocksOrError() */"
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 733,
+      "lineNum": 35,
+      "charNum": 21
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 734,
+      "lineNum": 35,
+      "charNum": 22
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 761,
+      "lineNum": 35,
+      "charNum": 49
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 803,
+      "lineNum": 36,
+      "charNum": 41
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 825,
+      "lineNum": 36,
+      "charNum": 63
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 848,
+      "lineNum": 37,
+      "charNum": 21
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 849,
+      "lineNum": 37,
+      "charNum": 22
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 884,
+      "lineNum": 39,
+      "charNum": 5
+    },
+    {
+      "startOffset": 891,
+      "startLine": 41,
+      "startChar": 5,
+      "endLine": 41,
+      "text": "/** before beginComment() */"
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 937,
+      "lineNum": 43,
+      "charNum": 17
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 991,
+      "lineNum": 43,
+      "charNum": 71
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 993,
+      "lineNum": 43,
+      "charNum": 73
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 1006,
+      "lineNum": 44,
+      "charNum": 12
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 1019,
+      "lineNum": 44,
+      "charNum": 25
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 1021,
+      "lineNum": 44,
+      "charNum": 27
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 1046,
+      "lineNum": 45,
+      "charNum": 24
+    },
+    {
+      "opening": true,
+      "char": "`",
+      "offset": 1047,
+      "lineNum": 45,
+      "charNum": 25
+    },
+    {
+      "opening": false,
+      "char": "`",
+      "offset": 1100,
+      "lineNum": 45,
+      "charNum": 78
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 1101,
+      "lineNum": 45,
+      "charNum": 79
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 1112,
+      "lineNum": 46,
+      "charNum": 9
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 1158,
+      "lineNum": 48,
+      "charNum": 5
+    },
+    {
+      "startOffset": 1165,
+      "startLine": 50,
+      "startChar": 5,
+      "endLine": 50,
+      "text": "/** before endComment() */"
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 1207,
+      "lineNum": 52,
+      "charNum": 15
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 1243,
+      "lineNum": 52,
+      "charNum": 51
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 1245,
+      "lineNum": 52,
+      "charNum": 53
+    },
+    {
+      "startOffset": 1255,
+      "startLine": 53,
+      "startChar": 9,
+      "endLine": 53,
+      "text": "// at start of method"
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 1288,
+      "lineNum": 54,
+      "charNum": 12
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 1301,
+      "lineNum": 54,
+      "charNum": 25
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 1303,
+      "lineNum": 54,
+      "charNum": 27
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 1328,
+      "lineNum": 55,
+      "charNum": 24
+    },
+    {
+      "opening": true,
+      "char": "`",
+      "offset": 1329,
+      "lineNum": 55,
+      "charNum": 25
+    },
+    {
+      "startOffset": 1355,
+      "startLine": 55,
+      "startChar": 51,
+      "endLine": 55,
+      "text": "/*nested*/"
+    },
+    {
+      "opening": false,
+      "char": "`",
+      "offset": 1393,
+      "lineNum": 55,
+      "charNum": 89
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 1394,
+      "lineNum": 55,
+      "charNum": 90
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 1405,
+      "lineNum": 56,
+      "charNum": 9
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 1418,
+      "lineNum": 57,
+      "charNum": 12
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 1449,
+      "lineNum": 57,
+      "charNum": 43
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 1459,
+      "lineNum": 58,
+      "charNum": 9
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 1488,
+      "lineNum": 59,
+      "charNum": 28
+    },
+    {
+      "opening": true,
+      "char": "`",
+      "offset": 1489,
+      "lineNum": 59,
+      "charNum": 29
+    },
+    {
+      "opening": false,
+      "char": "`",
+      "offset": 1535,
+      "lineNum": 59,
+      "charNum": 75
+    },
+    {
+      "opening": true,
+      "char": "`",
+      "offset": 1558,
+      "lineNum": 60,
+      "charNum": 21
+    },
+    {
+      "opening": false,
+      "char": "`",
+      "offset": 1597,
+      "lineNum": 60,
+      "charNum": 60
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 1598,
+      "lineNum": 60,
+      "charNum": 61
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 1609,
+      "lineNum": 61,
+      "charNum": 9
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 1643,
+      "lineNum": 63,
+      "charNum": 32
+    },
+    {
+      "opening": true,
+      "char": "{",
+      "offset": 1644,
+      "lineNum": 63,
+      "charNum": 33
+    },
+    {
+      "startOffset": 1658,
+      "startLine": 64,
+      "startChar": 13,
+      "endLine": 64,
+      "text": "/* in nested object */"
+    },
+    {
+      "opening": true,
+      "char": "(",
+      "offset": 1767,
+      "lineNum": 66,
+      "charNum": 44
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 1796,
+      "lineNum": 66,
+      "charNum": 73
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 1806,
+      "lineNum": 67,
+      "charNum": 9
+    },
+    {
+      "opening": false,
+      "char": ")",
+      "offset": 1807,
+      "lineNum": 67,
+      "charNum": 10
+    },
+    {
+      "startOffset": 1849,
+      "startLine": 69,
+      "startChar": 39,
+      "endLine": 69,
+      "text": "// make sure the new starts get set"
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 1889,
+      "lineNum": 70,
+      "charNum": 5
+    },
+    {
+      "opening": false,
+      "char": "}",
+      "offset": 1891,
+      "lineNum": 71,
+      "charNum": 1
+    },
+    {
+      "startOffset": 1894,
+      "startLine": 73,
+      "startChar": 1,
+      "endLine": 73,
+      "text": "// after code"
+    }
+  ]
+}

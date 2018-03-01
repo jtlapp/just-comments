@@ -1,0 +1,69 @@
+{
+  "blocks": [
+    {
+      "targetLineOffset": 18,
+      "targetLineNum": 3,
+      "comments": [
+        {
+          "startOffset": 0,
+          "startLine": 1,
+          "startChar": 1,
+          "endLine": 1,
+          "text": "// First comment"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 821,
+      "targetLineNum": 34,
+      "comments": [
+        {
+          "startOffset": 854,
+          "startLine": 34,
+          "startChar": 34,
+          "endLine": 34,
+          "text": "// dquote \\"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 866,
+      "targetLineNum": 35,
+      "comments": [
+        {
+          "startOffset": 899,
+          "startLine": 35,
+          "startChar": 34,
+          "endLine": 35,
+          "text": "// squote \\"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 911,
+      "targetLineNum": 36,
+      "comments": [
+        {
+          "startOffset": 944,
+          "startLine": 36,
+          "startChar": 34,
+          "endLine": 36,
+          "text": "// template literal \\"
+        }
+      ]
+    },
+    {
+      "targetLineOffset": 982,
+      "targetLineNum": 39,
+      "comments": [
+        {
+          "startOffset": 967,
+          "startLine": 38,
+          "startChar": 1,
+          "endLine": 38,
+          "text": "// Last comment"
+        }
+      ]
+    }
+  ]
+}

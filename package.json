@@ -1,7 +1,7 @@
 {
   "name": "just-comments",
   "version": "0.5.0",
-  "description": "Lightweight comment parser for JS/TS that indicates the targeted code",
+  "description": "Lightweight JS/TS comment parser that points to the targeted code",
   "main": "build/src/index.js",
   "repository": "https://github.com/jtlapp/just-comments.git",
   "author": "Joe Lapp <arachnojoe@gmail.com>",
