@@ -6,7 +6,7 @@ Lightweight JS/TS comment parser that points to the targeted code
 
 Use this tiny parser to extract comments from Javascript or Typescript source code without having to load a full-fledged Javascript or Typescript parser. The parser reports comment events via a listener interface, so that the client app can build structures or process data on the fly as needed.
 
-The parser also reports the location of the code that each comment appears to be characterizing, as well as the locations of each possible change in code scope. This feature facilitates extracting comments to generate code documentation or identifying the code to which comment-based directives apply.
+The parser also reports the location of the code that each comment appears to be characterizing, as well as the locations of each possible change in code scope. These features facilitate extracting comments to generate code documentation or identifying the code to which comment-based directives apply.
 
 Includes support for comments nested within ES6 template literals.
 
