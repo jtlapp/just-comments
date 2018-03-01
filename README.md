@@ -25,7 +25,7 @@ yarn add just-comments
 ## Usage
 
 
-Example usage in Javascript, parsing a Javascript file ([see the JS demo]()):
+Example usage in Javascript, parsing a Javascript file ([see the JS demo](https://github.com/jtlapp/just-comments/blob/master/demos/js_demo.js)):
 
 ```js
 const JustComments = require('just-comments');
@@ -70,7 +70,7 @@ const parser = new JustComments.CommentParser(sourceText, new MyListener());
 parser.parse();
 ```
 
-Example usage in Typescript, parsing a Typescript file ([see the TS demo]()):
+Example usage in Typescript, parsing a Typescript file ([see the TS demo](https://github.com/jtlapp/just-comments/blob/master/demos/ts_demo.ts)):
 
 ```typescript
 import { CommentParser, CommentListener } from 'just-comments';
@@ -119,7 +119,7 @@ parser.parse();
 
 ## API
 
-See the [API page]().
+See the [API page](https://github.com/jtlapp/just-comments/blob/master/API.md).
 
 ## Notes
 
@@ -128,3 +128,27 @@ See the [API page]().
 * When preceding comments all target a line of source that itself contains comments, the preceding comments and the comments on that line together form a series that targets the line.
 * A multi-line comment that begins on a line containing non-comment source code extends the series of comments that targets the line, so that comments occurring after the multi-line comment but on the same line as the end of the multi-line comment target the same line of code as the preceding multi-line comment.
 * The parser reports characters that may begin or end code scopes to facilitate client apps that may subsequently parse non-comment source code. This helps keep clients from having to determine whether these characters occur within quotes, template literals, or regular expressions.
+
+## License
+
+MIT License
+
+Copyright (c) 2018 Joseph T. Lapp
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
