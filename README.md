@@ -6,7 +6,7 @@ Lightweight JS/TS comment parser that points to the targeted code
 
 Use this tiny parser to extract comments from Javascript or Typescript source code without having to load a full-fledged Javascript or Typescript parser. The parser reports comment events via a listener interface, so that the client app can build structures or process data on the fly as needed.
 
-The parser also reports the location of the code that each comment appears to be characterizing, as well as the locations of each possible change in code scope.
+The parser also reports the location of the code that each comment appears to be characterizing, as well as the locations of each possible change in code scope. This feature facilitates extracting comments to generate code documentation or identifying the code to which comment-based directives apply.
 
 Includes support for comments nested within ES6 template literals.
 
@@ -127,8 +127,9 @@ See the [API page](https://github.com/jtlapp/just-comments/blob/master/API.md).
 * Comments that occur on the same line as non-comment source code all target that line of source code.
 * When preceding comments all target a line of source that itself contains comments, the preceding comments and the comments on that line together form a series that targets the line.
 * A multi-line comment that begins on a line containing non-comment source code extends the series of comments that targets the line, so that comments occurring after the multi-line comment but on the same line as the end of the multi-line comment target the same line of code as the preceding multi-line comment.
-* ES6 template literals may contain nested `${...}` expressions, and comments may appear in these expressions. The parser reports these comments and their target lines, but within template literals it does not report characters thay may change code scope. Instead, the parser reports when a template literal opens and when it closes as having a scope initiated by the ` character.
+* ES6 template literals may contain nested `${...}` expressions, and comments may appear in these expressions. The parser reports these comments and their target lines.
 * The parser reports characters that may begin or end code scopes to facilitate client apps that may subsequently parse non-comment source code. This helps keep clients from having to determine whether these characters occur within quotes, template literals, or regular expressions.
+* Within template literals, the parser does not report characters thay may change code scope. Instead, the parser reports when a template literal opens and when it closes as having a scope initiated by the ` character.
 
 ## License
 
